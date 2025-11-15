@@ -1,0 +1,56 @@
+
+GAME:
+Board board
+Rules rules
+Deque Players
+List Observers
+addObserver()
+notify()
+bool gameOver;
+addPlayer()
+play()
+
+
+
+
+
+BOARD:
+Symbol symbol[][]
+size
+Symbol emptyCell
+isCellEmpty(row, col)
+placeMark(row, col, symbol)
+getCell(row, col)
+display()
+
+
+
+
+SYMBOL
+charmark
+getMark()
+
+
+<<inteface>>
+RULES:
+isValidMove(Board, row, col)
+checkWin(Board, symbol)
+checkDraw(Board)
+
+STANDARD_RULES: RULES
+isValidMove(Board, row, col)
+checkWin(Board, symbol)
+checkDraw(Board)
+
+PLAYERS:
+id
+name
+Symbol
+score
+
+<<interface>>
+Observers:
+update(String msg)
+
+AppNotification: Observers
+update(String msg)

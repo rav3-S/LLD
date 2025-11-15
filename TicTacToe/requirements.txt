@@ -1,0 +1,6 @@
+Tic Tac Toe Game:
+
+1. Scalable board
+2. Standard rules apply, can have other rules too
+3. Send In app notifiations on game state
+
